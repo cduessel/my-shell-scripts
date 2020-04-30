@@ -1,4 +1,4 @@
-esse preciso rever!
+esse preciso rever! resultado deu certo mas gabarito não tem nada a ver!
 
 while [ $1 ]
    do 
