@@ -1,14 +1,15 @@
-esse preciso rever! resultado deu certo mas gabarito não tem nada a ver!
+#!/bin/bash
 
-while [ $1 ]
-   do 
-    if [ -d "$1" ]
-    then echo "diretorio"
-    elif [ -f "$1"]
-    then echo "arquivo"
-    else echo "outro tipo de arquivo"
-    fi
-    ls -l $1
-shift
-
-done
+echo "Digite o caminho de um arquivo ou diretório:"
+read FILE
+if [ -f "$FILE" ]
+  then
+    echo "$FILE é um arquivo comum"
+elif [ -d "$FILE" ]
+  then
+    echo "$FILE é um diretório"
+else
+    echo "$FILE é alguma outra coisa"
+fi
+ls -l $FILE
+  
