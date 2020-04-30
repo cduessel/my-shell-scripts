@@ -1,6 +1,7 @@
 #!/bin/bash
 #favor olhar a resolução correta da aula! ps. ctz que vou ter mto sucesso programando assim!
 
+esse preciso rever!
 while [ $1 ]
    do 
     if [ -d "$1" ]
