@@ -1,3 +1,5 @@
+#!/bin/bash
+#favor olhar a resolução correta da aula! ps. ctz que vou ter mto sucesso programando assim!
 
 while [ $1 ]
    do 
