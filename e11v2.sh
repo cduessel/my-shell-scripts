@@ -1,12 +1,18 @@
 #!/bin/bash
 
-dir=$1
-ext=$2
+#Modifique o Shell Script do exercício anterior para receber o diretório onde estão os arquivos e a extensão dos arquivos que devem ser modificados como argumento (ou parâmetro). Adicione também um mensagem mostrando como eram o como vão ficar os nomes dos arquivos a serem modificados.
 
-cd $dir
+DIRECTORY=$1
+EXTENSION=$2
 
-for nomes in `ls *$ext`
-do 
-     mv $nomes "v2"$nomes && echo $nomes "virou" "v2"$nomes
- 
-   done
+DAY=$(date +%F)
+
+cd $DIRECTORY
+
+for FILE in `ls *.$EXTENSION`
+ do
+    echo "Renomeando $FILE para ${DAY}-${FILE}"
+    mv $FILE ${DAY}-${FILE}
+ done
+
+  
